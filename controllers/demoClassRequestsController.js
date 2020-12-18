@@ -18,10 +18,10 @@ exports.createDemoClassRequest = (req, res) => {
         createdRequest.requestId,
         createdRequest._doc
       );
-      res.send(200, createdRequest._doc);
+      res.status(200).send(createdRequest._doc);
     })
     .catch((err) => {
       console.log(err);
-      res.send(500, "An error has occurred!");
+      res.status(500).send("An error has occurred!");
     });
 };

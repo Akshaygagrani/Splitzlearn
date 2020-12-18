@@ -2,14 +2,24 @@ const demoClassRequestModel = require("../models/demoClass");
 
 exports.createDemoClassRequest = (req, res) => {
   console.log(req.body);
-  const { name, phoneNumber, emailId, whatsAppNumber, gender } = req.body;
+  const {
+    name,
+    phoneNumber,
+    emailId,
+    whatsAppNumber,
+    gender,
+    courseId,
+  } = newFunction(req);
+  
   let demoClassRequest = {
     name: name,
     phoneNumber: phoneNumber,
     emailId: emailId,
     whatsAppNumber: whatsAppNumber,
     gender: gender,
+    courseId: courseId,
   };
+  
   demoClassRequestModel
     .create(demoClassRequest)
     .then((createdRequest) => {
@@ -25,3 +35,7 @@ exports.createDemoClassRequest = (req, res) => {
       res.status(500).send("An error has occurred!");
     });
 };
+function newFunction(req) {
+  return req.body;
+}
+

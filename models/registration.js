@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const shortId = require("shortid");
 
-const demoClassRequest = new mongoose.Schema({
-  requestId: {
+const registration = new mongoose.Schema({
+  registrationId: {
     type: String,
     required: true,
     default: shortId.generate,
@@ -33,10 +33,22 @@ const demoClassRequest = new mongoose.Schema({
     required: true,
   },
 
+  isGroup: {
+    type: Boolean,
+    required: false,
+    default: false,
+  },
+
+  paymentReceipt: {
+    type: Buffer,
+    required: true,
+    contentType: String,
+  },
+
   courseId: {
     type: String,
     required: true,
   },
 });
 
-module.exports = mongoose.model("demoClassRequests", demoClassRequest);
+module.exports = mongoose.model("registrations", registration);

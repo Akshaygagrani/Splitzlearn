@@ -18,7 +18,7 @@ exports.createDemoClassRequest = (req, res) => {
         createdRequest.requestId,
         createdRequest._doc
       );
-      res.send(200, JSON.stringify(createdRequest._doc));
+      res.send(200, createdRequest._doc);
     })
     .catch((err) => {
       console.log(err);

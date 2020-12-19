@@ -8,8 +8,7 @@ exports.createDemoClassRequest = (req, res) => {
     emailId,
     whatsAppNumber,
     gender,
-    courseId,
-  } = newFunction(req);
+  } = req.body;
   
   let demoClassRequest = {
     name: name,
@@ -17,7 +16,7 @@ exports.createDemoClassRequest = (req, res) => {
     emailId: emailId,
     whatsAppNumber: whatsAppNumber,
     gender: gender,
-    courseId: courseId,
+    courseId: req.params.courseId,
   };
   
   demoClassRequestModel

@@ -269,7 +269,8 @@
 
                     <div uk-form-custom="target: true">
                       <input type="file" name="paymentReceipt">
-                      <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+                      <input class="uk-input uk-form-width-medium" type="text" placeholder="Upload Payment Receipt"
+                        disabled>
                     </div>
                     <button class="uk-button uk-button-default">Submit</button>
                   </fieldset>
@@ -282,7 +283,47 @@
 
                 <button class="uk-modal-close-default" type="button" uk-close></button>
 
-                <input class="uk-input" type="text" placeholder="Enter your name" />
+                <form method="POST" action="/request-demo/C01">
+                  <fieldset class="uk-fieldset">
+                    <div class="uk-margin">
+                      <input class="uk-input" type="text" name="name" placeholder="Enter your Name" required />
+                    </div>
+
+                    <div class="uk-margin">
+                      <input class="uk-input" type="text" name="emailId" placeholder="Enter your Email" required />
+                    </div>
+
+                    <div class="uk-margin">
+                      <input class="uk-input" type="text" name="phoneNumber" placeholder="Enter your Phone No."
+                        required />
+                    </div>
+
+                    <div class="uk-margin">
+                      <input class="uk-input" type="text" name="whatsAppNumber" placeholder="Enter your WhatsApp No."
+                        required />
+                    </div>
+
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                      <label>Select your gender?</label>
+                      <label><input class="uk-radio" type="radio" name="gender" value="male" required checked>
+                        Male</label>
+                      <label><input class="uk-radio" type="radio" name="gender" value="female"> Female</label>
+                    </div>
+
+                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                      <label>Do you have a group?</label>
+                      <label><input class="uk-radio" type="radio" name="isGroup" value=true required> Yes</label>
+                      <label><input class="uk-radio" type="radio" name="isGroup" value=false> No</label>
+                    </div>
+
+                    <!-- <div uk-form-custom="target: true">
+                      <input type="file" name="paymentReceipt">
+                      <input class="uk-input uk-form-width-medium" type="text" placeholder="Upload Payment Receipt"
+                        disabled>
+                    </div> -->
+                    <button class="uk-button uk-button-default" type="submit">Submit</button>
+                  </fieldset>
+                </form>
 
               </div>
             </div>

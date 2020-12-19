@@ -11,7 +11,7 @@ router.get("/courses-web", (req, res) => {
   res.render("course-web");
 });
 
-router.post("/request-demo", demoClassRequestController.createDemoClassRequest);
+router.post("/request-demo/:courseId", demoClassRequestController.createDemoClassRequest);
 router.post("/register/:courseId", registrationController.createRegistration);
 
 module.exports = router;

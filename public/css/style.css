@@ -21,6 +21,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  overflow-x: hidden;
 }
 .message_submit_form:focus {
   outline: none;

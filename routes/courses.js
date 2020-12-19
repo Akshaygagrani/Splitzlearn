@@ -3,7 +3,7 @@ const router = express.Router();
 const demoClassRequestController = require("../controllers/demoClassRequestsController.js");
 const registrationController = require("../controllers/registrationController");
 
-router.get("/courses", (req, res) => {
+router.get("/course", (req, res) => {
   res.render("allCourses");
 });
 

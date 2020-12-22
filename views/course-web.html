@@ -9,24 +9,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Splitzlearn</title>
   <link rel="icon" href="img/favicon.png">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/animate.css">
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-  <link rel="stylesheet" href="css/themify-icons.css">
-
-  <link rel="stylesheet" href="css/flaticon.css">
-
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-  <link rel="stylesheet" href="css/slick.css">
-
-  <link rel="stylesheet" href="css/style.css">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/css/uikit.min.css" />
+
+
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../public/css/animate.css">
+
+  <link rel="stylesheet" href="../public/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="../public/css/themify-icons.css">
+
+  <link rel="stylesheet" href="../public/css/flaticon.css">
+
+  <link rel="stylesheet" href="../public/css/magnific-popup.css">
+
+  <link rel="stylesheet" href="../public/css/slick.css">
+
+  <link rel="stylesheet" href="../public/css/style.css">
+
 
 </head>
 
@@ -89,7 +90,7 @@
       <div class="row">
         <div class="col-lg-8 course_details_left">
           <div class="main_image">
-            <img class="img-fluid" src="img/single_cource.png" alt="">
+            <img class="img-fluid" src="../public/img/single_cource.png" alt="">
           </div>
           <div class="content_wrapper">
             <h4 class="title_top">Objectives</h4>
@@ -220,7 +221,8 @@
 
                 <button class="uk-modal-close-default" type="button" uk-close></button>
 
-                <form method="POST" action="/register/C01">
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+                  action="https://script.google.com/macros/s/AKfycbykiSduLgFKmKRbL5fOpKDnoB6CsFtfc8HEkmBns0QK5mt5M_MivrM-/exec">
                   <fieldset class="uk-fieldset">
                     <div class="uk-margin">
                       <input class="uk-input" type="text" name="name" placeholder="Enter your Name" required />
@@ -252,6 +254,8 @@
                       <label><input class="uk-radio" type="radio" name="isGroup" value=true required> Yes</label>
                       <label><input class="uk-radio" type="radio" name="isGroup" value=false> No</label>
                     </div>
+
+                    <input type="text" name="isDemo" value=false hidden>
 
                     <div uk-form-custom="target: true">
                       <input type="file" name="paymentReceipt">
@@ -269,7 +273,8 @@
 
                 <button class="uk-modal-close-default" type="button" uk-close></button>
 
-                <form method="POST" action="/request-demo/C01">
+                <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+                  action="https://script.google.com/macros/s/AKfycbykiSduLgFKmKRbL5fOpKDnoB6CsFtfc8HEkmBns0QK5mt5M_MivrM-/exec">
                   <fieldset class="uk-fieldset">
                     <div class="uk-margin">
                       <input class="uk-input" type="text" name="name" placeholder="Enter your Name" required />
@@ -301,6 +306,8 @@
                       <label><input class="uk-radio" type="radio" name="isGroup" value=true required> Yes</label>
                       <label><input class="uk-radio" type="radio" name="isGroup" value=false> No</label>
                     </div>
+
+                    <input type="text" name="isDemo" value=true hidden>
 
                     <!-- <div uk-form-custom="target: true">
                       <input type="file" name="paymentReceipt">
@@ -448,11 +455,11 @@
         <div class="col-sm-6 col-md-4 col-xl-3">
           <div class="single-footer-widget footer_1">
             <a href="/"> <img src="img/logo.png" alt=""> </a>
-            <p>India's First Live E-Learning Platform 
+            <p>India's First Live E-Learning Platform
               Where you decide your Batchmates!
             </p>
-            <p>Splitzlearn is an ed-tech community run by IIT(ISM) Dhanbad Alumnus, 
-              who identified the need of an interactive learner friendly live training for people. 
+            <p>Splitzlearn is an ed-tech community run by IIT(ISM) Dhanbad Alumnus,
+              who identified the need of an interactive learner friendly live training for people.
             </p>
           </div>
         </div>
@@ -503,7 +510,7 @@
                 <p class="footer-text m-0">
                   Copyright &copy;
                   All rights reserved | Made with
-                   <i class="ti-heart" aria-hidden="true"></i> by Splitzlearn
+                  <i class="ti-heart" aria-hidden="true"></i> by Splitzlearn
                 </p>
               </div>
             </div>
@@ -514,26 +521,26 @@
   </footer>
 
 
-  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="../public/../public/js/jquery-1.12.1.min.js"></script>
 
-  <script src="js/popper.min.js"></script>
+  <script src="../public/js/popper.min.js"></script>
 
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
 
-  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="../public/js/jquery.magnific-popup.js"></script>
 
-  <script src="js/swiper.min.js"></script>
+  <script src="../public/js/swiper.min.js"></script>
 
-  <script src="js/masonry.pkgd.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="../public/js/masonry.pkgd.js"></script>
+  <script src="../public/js/jquery.nice-select.min.js"></script>
 
-  <script src="js/owl.carousel.min.js"></script>
+  <script src="../public/js/owl.carousel.min.js"></script>
 
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/waypoints.min.js"></script>
+  <script src="../public/js/slick.min.js"></script>
+  <script src="../public/js/jquery.counterup.min.js"></script>
+  <script src="../public/js/waypoints.min.js"></script>
 
-  <script src="js/custom.js"></script>
+  <script src="../public/js/custom.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
   <script>
@@ -546,8 +553,10 @@
   <script defer src="../../../static.cloudflareinsights.com/beacon.min.js"
     data-cf-beacon='{"rayId":"602f2e4ddcdad9c8","version":"2020.12.1","si":10}'></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.17/dist/js/uikit-icons.min.js"></script>
+  <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/etrain/course-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Dec 2020 08:13:47 GMT -->

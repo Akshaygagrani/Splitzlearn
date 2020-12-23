@@ -1534,9 +1534,10 @@ ul {
 }
 .main_menu .navbar-brand {
   padding: 0 !important;
+  max-width: 75px;
 }
 .main_menu .navbar {
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 .main_menu .navbar-toggler {
   position: relative;
@@ -1562,7 +1563,7 @@ ul {
   }
 }
 .main_menu .main-menu-item ul li .nav-link {
-  color: #fff;
+  color: #ee3f0ec7;
   font-size: 15px;
   padding: 0 24px;
   font-family: roboto, sans-serif;

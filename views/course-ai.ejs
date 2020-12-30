@@ -1,0 +1,311 @@
+<%- include("partials/header.ejs", {title: "Splitzlearn" , desc: "" }) %>
+
+    <style>
+        .breadcrumb_bg {
+            background-image: url(/img/courses/ai-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb_iner text-center">
+                    <div class="breadcrumb_iner_item">
+                        <h2>Artificial Intelligence</h2>
+                        <p>Home<span>/</span>Course Details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="course_details_area section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 course_details_left">
+                <div class="main_image">
+                    <img class="img-fluid" src="/img/courses/ai-mm.jpg" alt="">
+                </div>
+                <div class="content_wrapper">
+                    <h4 class="title_top">Objectives</h4>
+                    <div class="content">
+                        In this course, we will teach you how to build the most efficient Artificial Intelligence
+                        model built on the most stable Intelligent Hybrid System. So far, this model proves to be
+                        the best state-of-the-art AI ever produced to defeat its predecessors at all AI competitions
+                        with extremely high scores.
+                    </div>
+                    <h4 class="title">Eligibility</h4>
+                    <div class="content">
+                        <li>High school mathematics.</li>
+                        <li>A fair bit of coding experience.
+                        </li>
+                    </div>
+                    <h4 class="title">Course Outline</h4>
+                    <div class="content">
+                        <ul class="course_list">
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Introduction</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Artificial Neural Network </p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Convolutional Neural Network</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>AutoEncoder</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Variational AutoEncoder </p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Implementing the CNN-VAE</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Recurrent Neural Network</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Mixture Density Network</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Implementing the MDN-RNN</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Reinforcement Learning</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>Deep NeuroEvolution </p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                            <li class="justify-content-between align-items-center d-flex">
+                                <p>The final run</p>
+                                <!-- <a class="btn_2 text-uppercase" href="#">View Details</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 right-contents">
+                <div class="sidebar_top">
+                    <ul>
+                        <!-- <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Trainer’s Name</p>
+                                <span class="color">George Mathews</span>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <h3>Course Fee </h3>
+                                <h3>Rs. 5,000</h3>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Available Seats </p>
+                                <span>15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="justify-content-between d-flex" href="#">
+                                <p>Schedule </p>
+                                <span>2.00 pm to 4.00 pm</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <div class="row">
+                        <!--<div class="col-sm-6">
+                            <a class="btn_1 d-block" href="#enroll_modal_form" uk-toggle>Enroll</a>
+                        </div>-->
+                        <div class="col-sm-6">
+                            <a class="btn_1 d-block" href="#demo_modal_form" uk-toggle>Free Demo</a>
+                        </div>
+                    </div>
+                    <div id="enroll_modal_form" class="uk-flex-top" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                                data-email="from_email@example.com"
+                                action="https://script.google.com/macros/s/AKfycbykiSduLgFKmKRbL5fOpKDnoB6CsFtfc8HEkmBns0QK5mt5M_MivrM-/exec">
+                                <fieldset class="uk-fieldset">
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="name"
+                                            placeholder="Enter your Name" required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="emailId"
+                                            placeholder="Enter your Email" required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="phoneNumber"
+                                            placeholder="Enter your Phone No." required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="whatsAppNumber"
+                                            placeholder="Enter your WhatsApp No." required />
+                                    </div>
+
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label>Select your gender?</label>
+                                        <label><input class="uk-radio" type="radio" name="gender" value="male"
+                                                required checked>
+                                            Male</label>
+                                        <label><input class="uk-radio" type="radio" name="gender" value="female">
+                                            Female</label>
+                                    </div>
+
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label>Do you have a group?</label>
+                                        <label><input class="uk-radio" type="radio" name="isGroup" value=true
+                                                required> Yes</label>
+                                        <label><input class="uk-radio" type="radio" name="isGroup" value=false>
+                                            No</label>
+                                    </div>
+
+                                    <input type="text" name="isDemo" value=false hidden>
+                                    <input type="text" name="courseID" value="C11" hidden>
+
+
+                                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label>Payment Details-Pay the course amount on the given details-</label><br>
+                                        <ol>   
+                                            <li>You can also use Paytm or Google Pay or PhonePe on the number - 9079868390</li> 
+                                            <li>For UPI payment you can pay on: 9079868390@paytm</li>
+                                            <li>Bank account details- Account Number- 919079868390 , IFSC Code- PYTM0123456</li>
+                                        </ol>
+                                    </div>
+                                    
+
+                                    <div uk-form-custom="target: true">
+                                        <input type="file" name="paymentReceipt">
+                                        <input class="uk-input uk-form-width-medium" type="text"
+                                            placeholder="Upload Payment Receipt" disabled>
+                                    </div>
+                                    <button class="uk-button uk-button-default">Submit</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="demo_modal_form" class="uk-flex-top" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                            <form id="gform" method="POST" class="pure-form pure-form-stacked"
+                                data-email="from_email@example.com"
+                                action="https://script.google.com/macros/s/AKfycbykiSduLgFKmKRbL5fOpKDnoB6CsFtfc8HEkmBns0QK5mt5M_MivrM-/exec">
+                                <fieldset class="uk-fieldset">
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="name"
+                                            placeholder="Enter your Name" required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="emailId"
+                                            placeholder="Enter your Email" required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="phoneNumber"
+                                            placeholder="Enter your Phone No." required />
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <input class="uk-input" type="text" name="whatsAppNumber"
+                                            placeholder="Enter your WhatsApp No." required />
+                                    </div>
+
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label>Select your gender?</label>
+                                        <label><input class="uk-radio" type="radio" name="gender" value="male"
+                                                required checked>
+                                            Male</label>
+                                        <label><input class="uk-radio" type="radio" name="gender" value="female">
+                                            Female</label>
+                                    </div>
+
+                                    <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                        <label>Do you have a group?</label>
+                                        <label><input class="uk-radio" type="radio" name="isGroup" value=true
+                                                required> Yes</label>
+                                        <label><input class="uk-radio" type="radio" name="isGroup" value=false>
+                                            No</label>
+                                    </div>
+
+                                    <input type="text" name="isDemo" value=true hidden>
+                                    <input type="text" name="courseID" value="C11" hidden>
+
+                                    <!-- <div uk-form-custom="target: true">
+                                     <input type="file" name="paymentReceipt">
+                                            <input class="uk-input uk-form-width-medium" type="text" placeholder="Upload Payment Receipt"
+                    disabled>
+                </div> -->
+                                    <button class="uk-button uk-button-default" type="submit">Submit</button>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body" style="margin: 1vh 0;">
+                    <img src="/img/user.svg" style="width: 26px;">
+                    <h4 style="margin-top: 10px;">One on one mentoring</h4>
+                    <br>
+                    <h5>Batch size -> 1 student</h5>
+                    <h5>No. of instructors -> 1</h5>
+                    <h5>Price you pay -> ₹ 5000</h5>
+                    <br>
+                    <a class="btn_1 d-block" href="#enroll_modal_form" style="text-align: center;"
+                        uk-toggle>Enroll</a>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body" style="margin: 1vh 0;">
+                    <img src="/img/users.svg" style="width: 26px;">
+                    <h4 style="margin-top: 10px;">Make your own batch</h4>
+                    <br>
+                    <h5>Batch size -> Friends you bring</h5>
+                    <h5>No. of instructors -> 1</h5>
+                    <h5>Price you pay -> ₹ 5000 / No. of students</h5>
+                    <br>
+                    <a class="btn_1 d-block" href="#enroll_modal_form" style="text-align: center;"
+                        uk-toggle>Enroll</a>
+                </div>
+                <div class="uk-card uk-card-default uk-card-body" style="margin: 1vh 0;">
+                    <img src="/img/customer.svg" style="width: 26px;">
+                    <h4 style="margin-top: 10px;">Classroom Package</h4>
+                    <br>
+                    <h5>Batch size -> 10+</h5>
+                    <h5>No. of instructors -> 1</h5>
+                    <h5>Price you pay -> ₹ 800</h5>
+                    <br>
+                    <a class="btn_1 d-block" href="#enroll_modal_form" style="text-align: center;"
+                        uk-toggle>Enroll</a>
+                </div>
+                </div>
+                
+        </div>
+    </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

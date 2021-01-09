@@ -11,7 +11,10 @@ router.get("/courses/:name", (req, res) => {
   let name = req.params.name;
   if (name === "ai") {
     res.render("course-ai");
+  } else if (name === "ad") {
+    res.render("course-ad");
   }
+
 });
 // router.post("/request-demo/:courseId", demoClassRequestController.createDemoClassRequest);
 // router.post("/register/:courseId", registrationController.createRegistration);

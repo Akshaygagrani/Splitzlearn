@@ -2016,7 +2016,7 @@ ul {
   position: absolute;
   top: 163px;
   width: 41%;
-  height: 50%;
+  height: 70%;
   content: "";
   background-image: url(../img/banner_img.png);
   background-size: 100% 100%;
@@ -2036,6 +2036,7 @@ ul {
     text-align: center;
     margin: 0 auto;
     background-repeat: no-repeat;
+    height: 50%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -5422,4 +5423,19 @@ h6 {
 }
 .footer-area .btn_1 {
   margin-top: 0;
+}
+
+/* Custom */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.card-grid .item {
+  border: 1px solid #c4c4c4;
+  border-radius: 16px;
+  text-align: center;
+  padding: 10px;
+  margin-right: 4px;
 }
